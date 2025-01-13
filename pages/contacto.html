@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Banner principal -->
+    <header>
+        <img src="../img/Logo_of.png" alt="">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="empresa.html">Empresa</a>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="futbolistas.html">Futbolistas</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="empresa">
+        <h1>Contactenos</h1>
+        <h2>Telefonos</h2>
+            <p>+569 (Numero chile)</p>
+            <p>+54 (Numero argentina)</p>
+            <p>+351 (Numero portugal)</p>
+        <h2>Email </h2>
+            <p>contacto@q10sports.cl</p>
+        <h2>Direccion</h2>
+            <p>Moneda 611 - Oficina 72</p>
+        
+        <!-- Formulario -->
+         <h2>Formulario</h2>
+        <form action="/submit" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

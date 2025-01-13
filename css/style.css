@@ -1,0 +1,179 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+/* estilos de header */
+
+header {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 8%;
+}
+
+header nav ul {
+    color: #84754E;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #84754E;
+}
+
+/* estilos de main */
+
+main{
+    background-image: url(../img/fondo_pag.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #84754E;
+    padding: 20%;
+    flex-wrap: wrap;
+}
+
+main div a .boton{
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+main div a .boton:hover{
+    background-color: #cdbb8e;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+main .textos{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 20px;
+}
+
+main .textos h1 span{
+    display: block;
+}
+
+main .textos .boton{
+    color: aliceblue;
+    background-color: #84754E;
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* estilo main empresa */
+
+.empresa{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+}
+
+.empresa .imgEmpr{
+    width: 65%;
+    align-items: center;
+    padding: 15px;
+}
+
+.empresa .sec_empr{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.empresa div{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    color: #84754E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+}
+
+.empresa div img{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.empresa div img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.empresa section img{
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+    align-items: center;
+}
+
+.empresa section img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.empresa section div p span{
+    display: block;
+}
+
+/* estilos de section */
+
+section{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    margin-left: 15px;
+}
+
+section div p span{
+    display: block;
+}
+
+section div img{
+    width: 30%;
+    transition: 0.5s;
+}
+
+section div img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* estilo footer */
+
+footer {
+    text-align: center;
+    color: #84754E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
