@@ -3,68 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- link bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>Futbolistas</title>
 </head>
 <body>
     <!-- Banner principal -->
-    <header>
-        <img src="../img/Logo_of.png" alt="">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="empresa.html">Empresa</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="futbolistas.html">Futbolistas</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
+    <nav class="navbar navbar-expand-lg nav-color">
+        <div class="container-fluid">
+          <img src="../img/Logo_of.png" alt="" class="img-logo">
+          <button class="navbar-toggler color-butt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="empresa.html">Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active color-text-nav color-enlace" href="futbolistas.html">Futbolistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
 
     <!-- Contenido principal -->
-    <main class="empresa">
-        <h1>Nuestros Futbolistas</h1>
-        <section class="row gap-2">
-            <div>
-                <img src="../img/messiPNG.png" alt="" class="col-sm-12 col-md-3">
+    <main>
+        <h1 class="titulo-fut">Nuestros Futbolistas</h1>
+        <div class="container-jug">
+            <div class="item-jug">
+                <img src="../img/messiPNG.png" alt="" class="img-messi">
                 <h2>Lionel Messi</h2>
-                <p>Nacimiento: 24/06/1987 <span>
+                <p>Nacimiento: 24/06/1987 <span class="span">
                     Nacionalidad: Argentino hasta la médula </span>
-                    Altura: 1,70m <span>
+                    Altura: 1,70m <span class="span">
                     Posicion: Extremo derecho </span></p>
             </div>
             
-            <div>
-                <img src="../img/yamalPNG.png" alt="" class="col-sm-12 col-md-3">
+            <div class="item-jug">
+                <img src="../img/yamalPNG.png" alt="" class="img-yamal">
                 <h2>Lamin Yamal</h2>
-                <p>Nacimiento: 13/07/2007 <span>
+                <p>Nacimiento: 13/07/2007 <span class="span">
                     Nacionalidad: España </span>
-                    Altura: 1,80m <span>
+                    Altura: 1,80m <span class="span">
                     Posicion: Extremo derecho</span></p>
             </div>
 
-            <div>
-                <img src="../img/neymarPNG.png" alt="" class="col-sm-12 col-md-3">
+            <div class="item-jug jug-ney">
+                <img src="../img/neymarPNG.png" alt="" class="img-ney">
                 <h2>Neymar Jr</h2> 
-                <p>Nacimiento: 05/02/1992 <span>
+                <p>Nacimiento: 05/02/1992 <span class="span">
                     Nacionalidad: Brasil </span>
-                    Altura: 1,75m <span>
+                    Altura: 1,75m <span class="span">
                     Posicion: Extremo izquierdo </span>
                 </p>
             </div>
-        </section>
+          </div>
     </main>
 
 
@@ -73,5 +79,7 @@
         <p>Todos los derechos reservados</p>
     </footer>
 
+    <!-- js script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

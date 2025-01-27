@@ -5,34 +5,36 @@
     box-sizing: border-box;
 }
 
+/* estilos generales */
 body{
     background-color: black;
 }
 
-/* estilos de header */
+/* estilos para mobile */
 
-header {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.img-logo {
+    width: 15%;
+    padding: 10px;
 }
 
-header img {
-    width: 8%;
+.nav-color {
+    background-color: black;
 }
 
-header nav ul {
+.color-text-nav {
     color: #84754E;
-    list-style: none;
-    display: flex;
-    gap: 30px;
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: #84754E;
+.color-text-nav:hover {
+    color: #675e46;
+}
+
+.color-enlace {
+    color: #d3bd87 !important;
+}
+
+.color-butt {
+    background-color: #84754E !important;
 }
 
 /* estilos de main */
@@ -50,15 +52,10 @@ main{
     flex-wrap: wrap;
 }
 
-main div a .boton{
-    border-radius: 15px;
-    transition: 0.5s;
-}
-
-main div a .boton:hover{
-    background-color: #cdbb8e;
-    transform: scale(1.1);
-    transition: 0.5s;
+/* color boton */
+.color-boton, .color-boton:hover, .color-boton:active, .color-boton:visited, .color-boton:focus {
+    border-color: #84754E !important;
+    background-color: #84754E !important;
 }
 
 main .textos{
@@ -79,101 +76,147 @@ main .textos .boton{
     display: inline-block;
 }
 
-/* estilo main empresa */
-
-.empresa{
-    display: grid;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    flex-wrap: wrap;
-}
-
-.empresa .imgEmpr{
-    width: 65%;
-    align-items: center;
-    padding: 15px;
-}
-
-.empresa .sec_empr{
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-}
-
-.empresa div{
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-    color: #84754E;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    flex-wrap: wrap;
-}
-
-.empresa div img{
-    width: 100px;
-    height: 100px;
-    padding: 15px;
-    transition: 0.5s;
-}
-
-.empresa div img:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.empresa section img{
-    width: 200px;
-    height: 200px;
-    transition: 0.5s;
-    align-items: center;
-}
-
-.empresa section img:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.empresa section div p span{
-    display: block;
-}
-
 /* estilos de section */
 
-section{
+section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.titulo-section {
     display: flex;
-    padding: 15px;
+    color: #84754E;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
 }
 
-section div{
-    display: flex;
-    flex-direction: column;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4,170px);
+    justify-content: center;
     align-items: center;
-    color: aliceblue;
-    margin-left: 15px;
+    padding: 20px;
 }
 
-section div p span{
+.grid-item {
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 15%;
+    height: 15%;
+    object-fit: cover;
+}
+
+.grid-item h2 {
+    color: #84754E;
+}
+
+.grid-item p {
+    color: #675e46;
+}
+
+.span {
     display: block;
 }
 
-section div img{
-    width: 30%;
-    transition: 0.5s;
+/* container pages */
+.texto {
+    text-align: center;
 }
-
-section div img:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-/* estilo footer */
 
 footer {
     text-align: center;
     color: #84754E;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 6rem;
+}
+
+/* container jugadores */
+.container-jug {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.item-jug {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item-jug img {
+    padding: 30px;
+}
+
+.titulo-fut {
+    padding: 80px;
+    text-align: center;
+}
+
+
+/* estilos de tablet */
+
+@media screen and (min-width: 600px) {
+    .img-logo {
+        width: 10%;
+        padding: 10px;
+    }
+
+    header {
+        justify-content: space-between;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 55%);
+    }
+
+    .container-jug {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, 30%);
+        gap: 7rem;
+    }
+
+    .item-jug {
+        align-items: center;
+        justify-content: center;
+        /* padding: 30px; */
+    }
+
+}
+
+/* estilos de desktop */
+@media screen and (min-width: 1024px) {
+    .img-logo {
+        width: 5%;
+        padding: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(4, 2fr);
+        grid-template-rows: repeat(1, 50%);
+        margin-top: 2rem;
+    }
+
+    .container-jug {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, 30%);
+        gap: 9rem;
+    }
+
+    .item-jug {
+        align-items: center;
+        justify-content: center;
+    }
 }

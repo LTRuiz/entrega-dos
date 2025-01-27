@@ -3,80 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- link bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Q10 Sports</title>
 </head>
 <body>
     <!-- Banner principal -->
-    <header>
-        <img src="img/Logo_of.png" alt="" class="col">
-        <nav class="col">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="pages/empresa.html">Empresa</a>
-                </li>
-                <li>
-                    <a href="pages/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="pages/futbolistas.html">Futbolistas</a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html">Contacto</a>
-                </li>
+    <nav class="navbar navbar-expand-lg nav-color">
+        <div class="container-fluid">
+          <img src="img/Logo_of.png" alt="" class="img-logo">
+          <button class="navbar-toggler color-butt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active color-text-nav color-enlace" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="pages/empresa.html">Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="pages/futbolistas.html">Futbolistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="pages/contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
 
     <!-- Contenido principal -->
     <main>
         <div class="textos">
-            <h1>AGENCIA DE <span> FUTBOLISTAS</span></h1>
+            <h1 class="text-center">AGENCIA DE <span> FUTBOLISTAS</span></h1>
             <p>Somos un grupo de profesionales, dedicados a la gestión y el nexo entre clubes y jugadores..</p>
             <a href="pages/contacto.html">
-                <div class="boton">Contactanos</div>
+              <button type="button" class="btn btn-secondary color-boton">Contactanos</button>
             </a>
         </div>
-        <!-- <div class="img">
-            <img src="img/elDiegote.png" alt="">
-        </div>  -->
     </main>
 
     <section>
-        <div class="row gap-2">
-            <div class="boton">
-                <img src="img/manoPNG.png" alt="" class="col-sm-12 col-md-3">
-            </div>
-            <h2>Responsabilidad</h2>
-            <p>Experiencia, influencia y “visión del juego” <span> en la carrera del deportista</span></p>
+        <h1 class="titulo-section">NUESTROS VALORES</h1>
+        <div class="grid-container">
+            <div class="grid-item"><img src="img/manoPNG.png" alt=""><h2>Responsabilidad</h2><p>Experiencia, influencia y “visión del <span class="span"> juego” en la carrera del deportista.</span></p></div>
+            <div class="grid-item"><img src="img/pelotaPNG.png" alt=""><h2>Transparencia</h2><p>Importante para nosotros es “la <span class="span"> cercanía con el jugador y la </span> transparencia”.</p></div>
+            <div class="grid-item"><img src="img/lapizPNG.png" alt=""><h2>Gestion</h2><p>Asesoramiento, intermediación y <span class="span">coaching deportivo.</span></p></div>
+            <div class="grid-item"><img src="img/usuario_png.png" alt=""><h2>Honestidad</h2><p>Cumplimos con nuestra palabra,<span class="span"> actuamos conforme a lo que decimos </span> y cumplimos lo que prometemos.</p></div>
         </div>
-        
-        <div>
-            <div class="boton">
-                <img src="img/pelotaPNG.png" alt="" class="col-sm-12 col-md-3">
-            </div>
-            <h2>Transparencia</h2>
-            <p>Importante para nosotros es “la cercanía <span> con el jugador y la transparencia”.</span></p>
-        </div>
-
-        <div>
-            <div class="boton">
-                <img src="img/lapizPNG.png" alt="" class="col-sm-12 col-md-3">
-            </div>
-            <h2>Gestion</h2>
-            <p>Asesoramiento, intermediación <span> y coaching deportivo</span></p>
-        </div>
-
     </section>
 
     <!-- Pie de pagina -->
     <footer>
         <p>Todos los derechos reservados</p>
     </footer>
+
+    <!-- js script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

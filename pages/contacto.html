@@ -3,70 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- link bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>Contacto</title>
 </head>
 <body>
     <!-- Banner principal -->
-    <header>
-        <img src="../img/Logo_of.png" alt="">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="empresa.html">Empresa</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="futbolistas.html">Futbolistas</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
+    <nav class="navbar navbar-expand-lg nav-color">
+        <div class="container-fluid">
+          <img src="../img/Logo_of.png" alt="" class="img-logo">
+          <button class="navbar-toggler color-butt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="empresa.html">Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="futbolistas.html">Futbolistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active color-text-nav color-enlace" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
 
     <!-- Contenido principal -->
-    <main class="empresa">
+    <main>
         <h1>Contactenos</h1>
-        <h2>Telefonos</h2>
-            <p>+569 (Numero chile)</p>
-            <p>+54 (Numero argentina)</p>
-            <p>+351 (Numero portugal)</p>
-        <h2>Email </h2>
-            <p>contacto@q10sports.cl</p>
-        <h2>Direccion</h2>
-            <p>Moneda 611 - Oficina 72</p>
+        <div class="container-fluid">
+            <p class="text-center">Sumate a nuestra agencia y hace que importantes clubes te vean</p><h3>Fromas de contacto</h3><p>Moneda 611 Oficina 72, Santiago - Chile</p><h5>Teléfonos</h5><p>+54 9 3516 66 6678 (ARG)</p><p>+569 84092397 (CHI)</p><h5>Email</h5><p>contacto@q10sports.cl</p>
+        </div>
         
-        <!-- Formulario -->
-         <h2>Formulario</h2>
-        <form action="/submit" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre">
-
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido">
-
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email">
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje"></textarea>
-
-            <input type="submit" value="Enviar">
-        </form>
     </main>
 
     <!-- Pie de pagina -->
     <footer>
         <p>Todos los derechos reservados</p>
     </footer>
+
+    <!-- js script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>

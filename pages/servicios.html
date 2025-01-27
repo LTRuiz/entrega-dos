@@ -3,45 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- link bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
      <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>Servicios</title>
 </head>
 <body>
     <!-- Banner principal -->
-    <header>
-        <img src="../img/Logo_of.png" alt="">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="empresa.html">Empresa</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="futbolistas.html">Futbolistas</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
+    <nav class="navbar navbar-expand-lg nav-color">
+        <div class="container-fluid">
+          <img src="../img/Logo_of.png" alt="" class="img-logo">
+          <button class="navbar-toggler color-butt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  color-text-nav " href="empresa.html">Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active color-text-nav color-enlace" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="futbolistas.html">Futbolistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-text-nav" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
     
     <!-- Contenido Principal -->
     <main class="empresa">
         <h1>Nuestros Servicios</h1>
-        <h2>EXPERIENCIA FUTBOL INTERNACIONAL</h2>
-            <p>Proyecto Único e Innovador para entrenar en Europa como un Profesional y tener la posibilidad de pruebas en clubes Europeos.</p>
-        <h2>ASESORAMIENTO INTEGRAL</h2>
-            <p>No solo nos preocupamos de apoyar a nuestros futbolistas en el ámbito deportivo, también en asuntos legales, tributarios, inversiones e imagen, etc.</p>
-        <h2>REPRESENTACIÓN DEPORTIVA Y ASESORÍA EN MARKENTING DEPORTIVO</h2>
-            <p>Gestión en la negociación de contratos, transferencia de clubes y mentoria. Siempre trabajando de cerca con las familias.</p>
+        <div class="container-fluid">
+            <div class="col">
+                <h2>EXPERIENCIA FUTBOL INTERNACIONAL</h2>
+                    <p>Proyecto Único e Innovador para entrenar en Europa como un Profesional y tener la posibilidad de pruebas en clubes Europeos.</p>
+            </div>
+            <div class="col">
+                <h2>ASESORAMIENTO INTEGRAL</h2>
+                    <p>No solo nos preocupamos de apoyar a nuestros futbolistas en el ámbito deportivo, también en asuntos legales, tributarios, inversiones e imagen, etc.</p>
+            </div>
+            <div class="col">
+                <h2>REPRESENTACIÓN DEPORTIVA Y ASESORÍA EN MARKENTING DEPORTIVO</h2>
+                    <p>Gestión en la negociación de contratos, transferencia de clubes y mentoria. Siempre trabajando de cerca con las familias.</p>
+            </div>
+        </div>
     </main>
 
 
@@ -49,5 +63,8 @@
     <footer>
         <p>Todos los derechos reservados</p>
     </footer>
+
+    <!-- js script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
