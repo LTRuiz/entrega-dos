@@ -1,0 +1,19 @@
+{
+  "name": "entrega-git",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LTRuiz/entrega-dos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LTRuiz/entrega-dos/issues"
+  },
+  "homepage": "https://github.com/LTRuiz/entrega-dos#readme",
+  "description": ""
+}

@@ -1,0 +1,69 @@
+@import "../utilidades/variables";
+
+// mixin para flex
+
+@mixin back-img {
+    background-image: url(../img/fondo_pag.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #84754E;
+    padding: 20%;
+    flex-wrap: wrap;
+} 
+
+@mixin textos {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 20px;
+}
+
+@mixin span {
+    display: block;
+}
+
+@mixin flex {
+    display: flex;
+    color: $color-secundario;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+@mixin grid-container ($display, $columns, $rows) {
+    display: $display;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid-item {
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+@mixin img {
+    width: 15%;
+    height: 15%;
+    object-fit: cover;
+}
+
+@mixin footer{
+    color: $color-secundario;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+
+@mixin item-jug {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

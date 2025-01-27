@@ -1,0 +1,21 @@
+@import "../utilidades/mixin";
+
+/* estilos de desktop */
+
+@media screen and (min-width: 1024px) {
+    .img-logo {
+        width: 5%;
+        padding: 10px;
+    }
+    .grid-container {
+        @include grid-container(grid, repeat(4,2fr), repeat(1,55%));
+    }
+    .container-jug {
+        @include grid-container(grid, repeat(2,1fr), repeat(2,30%));
+        gap: 9rem;
+    }
+    .item-jug {
+        align-items: center;
+        justify-content: center;
+    }
+}

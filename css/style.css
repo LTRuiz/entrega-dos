@@ -1,222 +1,201 @@
 /* reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* estilos generales */
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-/* estilos para mobile */
-
+/* estilos de header */
 .img-logo {
-    width: 15%;
-    padding: 10px;
+  width: 15%;
+  padding: 10px;
 }
 
 .nav-color {
-    background-color: black;
+  background-color: black;
 }
 
 .color-text-nav {
-    color: #84754E;
+  color: #84754E;
 }
 
 .color-text-nav:hover {
-    color: #675e46;
+  color: #675e46;
 }
 
 .color-enlace {
-    color: #d3bd87 !important;
+  color: #d3bd87 !important;
 }
 
 .color-butt {
-    background-color: #84754E !important;
+  background-color: #84754E !important;
 }
 
 /* estilos de main */
-
-main{
-    background-image: url(../img/fondo_pag.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #84754E;
-    padding: 20%;
-    flex-wrap: wrap;
+main {
+  background-image: url(../img/fondo_pag.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #84754E;
+  padding: 20%;
+  flex-wrap: wrap;
+}
+main .textos {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-shadow: 0px 0px 20px;
+}
+main .textos h1 span {
+  display: block;
 }
 
-/* color boton */
 .color-boton, .color-boton:hover, .color-boton:active, .color-boton:visited, .color-boton:focus {
-    border-color: #84754E !important;
-    background-color: #84754E !important;
-}
-
-main .textos{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    text-shadow: 0px 0px 20px;
-}
-
-main .textos h1 span{
-    display: block;
-}
-
-main .textos .boton{
-    color: aliceblue;
-    background-color: #84754E;
-    padding: 10px;
-    margin-top: 10px;
-    display: inline-block;
+  border-color: #84754E !important;
+  background-color: #84754E !important;
 }
 
 /* estilos de section */
-
-section {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-}
-
 .titulo-section {
-    display: flex;
-    color: #84754E;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
+  display: flex;
+  color: #84754E;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4,170px);
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 170px);
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 
 .grid-item {
-    color: whitesmoke;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    text-align: center;
+  color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
 }
-
 .grid-item img {
-    width: 15%;
-    height: 15%;
-    object-fit: cover;
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
 }
-
 .grid-item h2 {
-    color: #84754E;
+  color: #84754E;
 }
-
 .grid-item p {
-    color: #675e46;
+  color: #675e46;
 }
 
 .span {
-    display: block;
+  display: block;
 }
 
-/* container pages */
-.texto {
-    text-align: center;
-}
-
+/*estilos footer*/
 footer {
-    text-align: center;
-    color: #84754E;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 6rem;
+  color: #84754E;
+  text-align: center;
+  margin-top: 6rem;
 }
 
-/* container jugadores */
+/*  */
+/*container pages*/
+.texto {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-shadow: 0px 0px 20px;
+}
+
+/*container jugadores*/
 .container-jug {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .item-jug {
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
-
 .item-jug img {
-    padding: 30px;
+  padding: 30px;
 }
 
 .titulo-fut {
-    padding: 80px;
-    text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-shadow: 0px 0px 20px;
 }
 
-
-/* estilos de tablet */
-
+/*estilos de tab*/
 @media screen and (min-width: 600px) {
-    .img-logo {
-        width: 10%;
-        padding: 10px;
-    }
-
-    header {
-        justify-content: space-between;
-        padding-right: 2rem;
-        padding-left: 2rem;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 2fr);
-        grid-template-rows: repeat(2, 55%);
-    }
-
-    .container-jug {
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2, 30%);
-        gap: 7rem;
-    }
-
-    .item-jug {
-        align-items: center;
-        justify-content: center;
-        /* padding: 30px; */
-    }
-
+  .img-logo {
+    width: 10%;
+    padding: 10px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 55%);
+    justify-content: center;
+    align-items: center;
+  }
+  .container-jug {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 30%);
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+  }
+  .item-jug {
+    align-items: center;
+    justify-content: center;
+    /* padding: 30px; */
+  }
 }
-
 /* estilos de desktop */
 @media screen and (min-width: 1024px) {
-    .img-logo {
-        width: 5%;
-        padding: 10px;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(4, 2fr);
-        grid-template-rows: repeat(1, 50%);
-        margin-top: 2rem;
-    }
-
-    .container-jug {
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2, 30%);
-        gap: 9rem;
-    }
-
-    .item-jug {
-        align-items: center;
-        justify-content: center;
-    }
+  .img-logo {
+    width: 5%;
+    padding: 10px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(1, 55%);
+    justify-content: center;
+    align-items: center;
+  }
+  .container-jug {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 30%);
+    justify-content: center;
+    align-items: center;
+    gap: 9rem;
+  }
+  .item-jug {
+    align-items: center;
+    justify-content: center;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

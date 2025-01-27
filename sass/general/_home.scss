@@ -1,0 +1,78 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+/* estilos de header */
+
+.img-logo {
+    width: 15%;
+    padding: 10px;
+}
+.nav-color{
+    background-color: black;
+}
+.color-text-nav {
+    color: #84754E;
+}
+.color-text-nav:hover {
+    color: #675e46;
+}
+.color-enlace {
+    color: #d3bd87 !important;
+}
+.color-butt {
+    background-color: #84754E !important;
+}
+
+/* estilos de main */
+
+main {
+    @include back-img;
+    .textos {
+        @include textos;
+        h1 {
+            span {
+                @include span;
+            }
+        }
+    }
+}
+
+.color-boton, .color-boton:hover, .color-boton:active, .color-boton:visited, .color-boton:focus {
+    border-color: #84754E !important;
+    background-color: #84754E !important;
+}
+
+/* estilos de section */
+
+.titulo-section {
+    @include flex;
+}
+
+.grid-container {
+    @include grid-container(grid, repeat(1,1fr), repeat(4,170px));
+    padding: 50px;
+}
+
+.grid-item {
+    @include grid-item;
+    img {
+        @include img;
+    }
+    h2 {
+        color: $color-secundario;
+    }
+    p {
+        color: $color-extra;
+    }
+}
+
+.span {
+    @include span;
+}
+
+/*estilos footer*/
+
+footer {
+    @include footer;
+}
+
+/*  */
