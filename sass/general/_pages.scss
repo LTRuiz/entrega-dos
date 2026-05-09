@@ -1,0 +1,25 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/*container pages*/
+.texto {
+    @include textos;
+}
+
+/*container jugadores*/
+
+.container-jug {
+    @include grid-container(grid, repeat(1,1fr), repeat(3,1fr));
+    padding: 20px;
+}
+
+.item-jug {
+    @include item-jug;
+    img {
+        padding: 30px;
+    }
+}
+
+.titulo-fut {
+    @include textos;
+}

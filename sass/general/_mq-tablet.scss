@@ -1,0 +1,23 @@
+@import "../utilidades/mixin";
+
+/*estilos de tab*/
+
+@media screen and (min-width: 600px) {
+    .img-logo {
+        width: 10%;
+        padding: 10px;
+    }
+    .grid-container {
+        @include grid-container(grid, repeat(2,2fr), repeat(2,55%));
+    }
+
+    .container-jug {
+        @include grid-container(grid, repeat(2,1fr), repeat(2,30%));
+        gap: 7rem;
+    }
+    .item-jug {
+        align-items: center;
+        justify-content: center;
+        /* padding: 30px; */
+    }
+}
